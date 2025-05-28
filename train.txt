@@ -1,0 +1,21 @@
+python main.py --model hit --dataset PaviaU --training_sample 0.1 --patch_size 15 --epoch 50 --cuda 0
+
+python main.py --model conv2d --dataset IndianPines --training_sample 0.1 --patch_size 15 --epoch 100 --cuda 0
+IndianPines
+PaviaU
+Houston2013
+
+python main_conformer.py --model conformer --dataset IndianPines --training_sample 0.1 --patch_size 15 --epoch 100 --cuda 0
+
+python main.py --model  SS_TMNet --dataset WH --training_sample 0.01 --patch_size 15 --epoch 100 --cuda 0 --runs 10
+
+python main.py --model  hybridkan --dataset IndianPines --training_sample 0.1 --patch_size 15 --epoch 100 --cuda 0 --runs 10
+
+
+python main.py --model  cattn --dataset IndianPines --training_sample 0.1 --patch_size 15 --epoch 100 --cuda 0 --runs 10
+
+python main.py --model  cattn --dataset PaviaU --training_sample 0.1 --patch_size 15 --epoch 100 --cuda 0 --runs 10
+
+python main.py --model  cattn --dataset Houtson2013 --training_sample 0.1 --patch_size 15 --epoch 100 --cuda 0 --runs 10
+
+python main.py --model  cattn --dataset WH --training_sample 0.1 --patch_size 15 --epoch 100 --cuda 0 --runs 10
